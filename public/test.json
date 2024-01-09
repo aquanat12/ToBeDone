@@ -1,0 +1,16 @@
+
+
+  [
+    {
+      "id": 1,
+      "name": "Test",
+      "Username": "User1",
+      "Password": "Pass1"
+    },
+    {
+      "id": 2,
+      "name": "Test2",
+      "Username": "test@domain.com",
+      "Password": "secret"
+    }
+  ]

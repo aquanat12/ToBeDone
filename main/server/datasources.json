@@ -1,0 +1,12 @@
+{
+  "postgres": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "url": "",
+    "database": "Loopback3",
+    "password": "Password123",
+    "name": "postgres",
+    "user": "Loopback",
+    "connector": "postgresql"
+  }
+}
