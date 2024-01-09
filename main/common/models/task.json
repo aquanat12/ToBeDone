@@ -25,7 +25,7 @@
       "default": "todo"
     },
     "dueDate": {
-      "type": "date"
+      "type": "string"
     }
   },
   "validations": [],

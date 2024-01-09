@@ -21,7 +21,7 @@ export default class LoginComponent extends Component {
       //const username = data[0].Username;
       const password = data[0].Password;
       if (password == this.Password) {
-        document.location = "/home";
+        document.location = '/home';
       } else {
         alert('Username or password incorrect');
       }

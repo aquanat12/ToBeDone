@@ -1,1 +1,27 @@
-{{this.Name}}
+{{#each @tasks as |task|}}
+  <tr>
+    <td>{{task.id}}</td>
+    <td>{{task.title}}</td>
+    <td>{{task.description}}</td>
+    <td>{{task.status}}</td>
+  </tr>
+{{/each}}
+
+
+<div class="container">
+  <div class="list-group">
+    {{#each model as |task|}}
+      <div class="row">
+        <div class="list-group-item col-md-8">
+          {{task.id}}:
+          {{task.description}}
+          <span class="deadline pull-right"><strong>Due:</strong> {{task.duedate}}</span>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-default edit" type="button"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+          <button class="btn btn-danger remove" type="button"><span class="glyphicon glyphicon-minus"></span> Remove</button>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

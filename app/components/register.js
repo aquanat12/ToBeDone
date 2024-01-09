@@ -3,7 +3,6 @@ import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import CryptoJS from 'crypto-js';
 
-
 export default class RegisterComponent extends Component {
   @tracked Name = '';
   @tracked Username = '';
@@ -26,7 +25,6 @@ export default class RegisterComponent extends Component {
     return !(this.Password == this.ConfirmPassword);
   }
 
-  
   @action async onSubmit() {
     event.preventDefault();
     const data = {
