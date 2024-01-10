@@ -3,7 +3,6 @@ import { inject as service } from '@ember/service';
 
 export default class HomeRoute extends Route {
     @service store;
-    
     model() {
         return this.store.findAll('task');
     }
